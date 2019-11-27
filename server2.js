@@ -1,48 +1,19 @@
-var express =  require("express");
-var empsRouter = require("./routes/emps");
-var adminRouter = require("./routes/admin");
-var config = require("config");
+console.log("Server Started1..");
 
-var port =   parseInt(config.get("port"));
-var app =  express();
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
+console.log("Server Started.1.");
 
 
 
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
+console.log("Server Started..11");
+console.log("Server Started..");console.log("Server Started..");
 
-app.use("/emps", empsRouter);
-app.use("/admin", adminRouter);
-console.log("aamche guru ")
- 
+console.log("Server Started..");
+console.log("Server Started..");
+console.log("Server Started..");
 
-app.listen(port, ()=>{
-    console.log("Server Started..");
-});
+console.log("Server Started..");
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
 
-app.listen(port, ()=>{
-    console.log("Server Started..");
-});
-
-app.listen(port, ()=>{
-    console.log("Server Started..");
-});
+console.log("Server Started..");
