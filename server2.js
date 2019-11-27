@@ -39,5 +39,10 @@ app.use(function(req, res, next) {
     next();
 });
 
+app.listen(port, ()=>{
+    console.log("Server Started..");
+});
 
-
+app.listen(port, ()=>{
+    console.log("Server Started..");
+});
